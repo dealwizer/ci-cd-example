@@ -15,3 +15,6 @@ jobs:
           echo "Проверяем код..."
           ls -la
           echo "CI успешно выполнен!"
+        
+       - name: Проверка HTML-файла
+       run: test -f index.html && echo "Файл найден!"
